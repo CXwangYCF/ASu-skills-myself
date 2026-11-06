@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0",
+  "candidate": "王晨曦",
+  "target_roles": [
+    "大模型应用开发实习生",
+    "AI Agent 研发实习生",
+    "RAG 应用算法实习生"
+  ],
+  "last_verified": "2026-11-06",
+  "claims": [
+    {
+      "id": "EDU-001",
+      "source_fact": "现有简历记载：西安电子科技大学网络与信息安全硕士，2025.09 至今，2028 届，GPA 3.74/4.0，Top 10%。",
+      "candidate_wording": "西安电子科技大学网络与信息安全硕士（2028 届），GPA 3.74/4.0，Top 10%。",
+      "sources": [
+        "resume/V2_ASu/王晨曦_大模型应用实习_ASu_V2.html"
+      ],
+      "responsibility_level": "项目负责人",
+      "verification_status": "已确认",
+      "allowed_uses": ["简历教育经历", "HR 开场白", "面试自我介绍"],
+      "interview_details": "可继续准备研究方向、课程、奖学金和可实习时间。",
+      "boundary": "学历与 GPA 仍应以学校成绩单和学信材料为最终凭证。",
+      "risk_notes": "Top 10% 若无官方排名证明，投递前确认是否保留。",
+      "last_verified": "2026-11-06"
+    },
+    {
+      "id": "EXP-001",
+      "source_fact": "现有简历记载：2026.07 至 2026.11 在杭州恒懂科技有限公司担任大模型应用实习生。",
+      "candidate_wording": "杭州恒懂科技有限公司｜大模型应用实习生｜2026.07–2026.11。",
+      "sources": [
+        "resume/V2_ASu/王晨曦_大模型应用实习_ASu_V2.html"
+      ],
+      "responsibility_level": "参与",
+      "verification_status": "已确认",
+      "allowed_uses": ["简历实习经历", "HR 开场白", "面试自我介绍"],
+      "interview_details": "主线可讲语料工程、RAG 评测、安全评测和性能验证。",
+      "boundary": "不要仅凭仓库全貌把团队已有系统架构写成个人主导。",
+      "risk_notes": "若实习证明上的公司名、岗位名或日期不同，应以证明为准。",
+      "last_verified": "2026-11-06"
+    },
+    {
+      "id": "DATA-001",
+      "source_fact": "个人语料目录的清洗说明与脚本记录了 2,238 页 OCR 处理和 2,716 个书籍切块，并使用 cleaned_by=chenxi 留痕。",
+      "candidate_wording": "负责 2,238 页母婴扫描材料的 OCR、版式处理、句子级跨页切块和元数据治理，形成 2,716 个可追溯切块。",
+      "sources": [
+        "repository/memory-service-codex-knowledge-corpus-1861-test/chenxi_collect_data/cleaned/清洗说明.md",
+        "repository/memory-service-codex-knowledge-corpus-1861-test/chenxi_collect_data/clean_books.py"
+      ],
+      "responsibility_level": "负责模块",
+      "verification_status": "已确认",
+      "allowed_uses": ["简历项目 bullet", "项目介绍", "OCR/RAG 面试题"],
+      "interview_details": "准备说明 300DPI、灰度化、Otsu、中文 OCR、双栏参数比较、跨页断句保护、doc_key 与页码范围。",
+      "boundary": "切块是语料建设分支产物，不等于 2,716 条全部进入生产并通过医学审核。",
+      "risk_notes": "清洗说明中存在不同阶段的切块长度统计快照，面试不要强记单一平均长度。",
+      "last_verified": "2026-11-06"
+    },
+    {
+      "id": "DATA-002",
+      "source_fact": "清洗说明记录 pregnancy_all 1,940 条、USDA 395 种食物且 363 条有效描述、19 条食安结论。",
+      "candidate_wording": "完成 1,940 条孕期结构数据、395 种 USDA 食物及 19 条食安结论的清洗、标准化和来源追踪。",
+      "sources": [
+        "repository/memory-service-codex-knowledge-corpus-1861-test/chenxi_collect_data/cleaned/清洗说明.md",
+        "repository/memory-service-codex-knowledge-corpus-1861-test/chenxi_collect_data/clean_pregnancy_all.py",
+        "repository/memory-service-codex-knowledge-corpus-1861-test/chenxi_collect_data/clean_usda.py",
+        "repository/memory-service-codex-knowledge-corpus-1861-test/chenxi_collect_data/clean_food_taboo.py"
+      ],
+      "responsibility_level": "负责模块",
+      "verification_status": "已确认",
+      "allowed_uses": ["简历项目 bullet", "数据治理面试题", "HR 项目介绍"],
+      "interview_details": "说明字段映射、无匹配食物、有效描述口径、来源与审核状态。",
+      "boundary": "不把结构数据数量说成线上用户量或知识问答数量。",
+      "risk_notes": "363 条有效描述是 395 种食物中的子集，两个数字不要混用。",
+      "last_verified": "2026-11-06"
+    },
+    {
+      "id": "RAG-001",
+      "source_fact": "RUNBOOK 的当时只读检查记录共 706 行，其中 543 行满足 enabled、reviewed、vector 与 reviewer 非空。",
+      "candidate_wording": "参与知识入库与状态核验，当时 706 条记录中有 543 条满足审核、启用和向量可用条件。",
+      "sources": [
+        "repository/memory-service-codex-knowledge-corpus-1861-test/docs/RUNBOOK.md"
+      ],
+      "responsibility_level": "参与",
+      "verification_status": "已确认",
+      "allowed_uses": ["简历项目 bullet", "RAG 面试题"],
+      "interview_details": "解释 dry-run、正式 ingest、reviewed/enabled/vector/reviewer 四个条件。",
+      "boundary": "706 是记录总量，不是全部审核可用；543 是特定时间快照，未确认当前生产现状。",
+      "risk_notes": "不得写成独立搭建整个知识库或 706 条全部上线。",
+      "last_verified": "2026-11-06"
+    },
+    {
+      "id": "RAG-002",
+      "source_fact": "200 道同题盲评中，通用 Agent 97.838/100、通过率 95.5%，裸模 87.108/100、通过率 91.0%；满分占比 92% 对 28%。",
+      "candidate_wording": "参与母婴知识链路评测，在 200 道同题盲评中 Agent 得分 97.838/100、通过率 95.5%，较裸模提升 10.73 分和 4.5 个百分点。",
+      "sources": [
+        "model_eval_data/母婴知识测评报告(通用agent及对应裸模).md"
+      ],
+      "responsibility_level": "参与",
+      "verification_status": "已确认",
+      "allowed_uses": ["简历项目 bullet", "RAG 评测面试题", "HR 项目介绍"],
+      "interview_details": "同题、五模型、GPT-5.6 Sol judge、盲评和加权得分；准备解释 2 个严重行动错误与 2 个安全 veto。",
+      "boundary": "该结果只在指定题集、模型版本和 judge 口径成立，不能外推全部母婴问题，也不能全部归因于检索。",
+      "risk_notes": "10.73 与 4.5 个百分点为报告数字之差，面试中要明确是派生值。",
+      "last_verified": "2026-11-06"
+    },
+    {
+      "id": "EVAL-001",
+      "source_fact": "报告记录历史版本 P4A 3.538/4 且 4 分占 80.94%，EQ-Chat 87.90，EQ-Need 80.79。",
+      "candidate_wording": "参与 P4A、EQ-Chat 与 EQ-Need 的版本评测和回归，历史版本分别达到 3.538/4、87.90 和 80.79，并定位长尾失败模式。",
+      "sources": [
+        "model_eval_data/ai-server-10.8-P4A结果报告.md",
+        "model_eval_data/ai-server-10.8-EQ-Chat结果报告.md",
+        "model_eval_data/ai-server-EQ-Need对比报告-20261024.md"
+      ],
+      "responsibility_level": "参与",
+      "verification_status": "已确认",
+      "allowed_uses": ["简历项目 bullet", "评测面试题"],
+      "interview_details": "说明样本量、judge、平均分与长尾；EQ-Need N4 仅 64.85，EQ-Chat 有开场同质化和安全误路由。",
+      "boundary": "不同评测集与版本不可横向拼成一个综合分；高均值不代表无长尾。",
+      "risk_notes": "P4A 的高分集中度需人工抽检，不能只报均值。",
+      "last_verified": "2026-11-06"
+    },
+    {
+      "id": "SAFE-001",
+      "source_fact": "280 条风险样本报告记录外部 AnalyzeTurn 链路 heavy F1 95.37%、P3 路由准确率 96.43%。报告明确这些不是 Qwen3.5-9B QLoRA 分类器单独指标。",
+      "candidate_wording": "参与 280 条风险样本的链路评测，外部 AnalyzeTurn 整体链路 heavy F1 95.37%、P3 路由准确率 96.43%，并识别分类结果投影与并发瓶颈。",
+      "sources": [
+        "model_eval_data/risk-judge-280-report-technical.md"
+      ],
+      "responsibility_level": "参与",
+      "verification_status": "已确认",
+      "allowed_uses": ["简历项目 bullet", "安全评测面试题"],
+      "interview_details": "准备说明 280/280 有效、270/280 路由正确、严重度与类别完全正确率 82.14%，以及首轮 9 次超时。",
+      "boundary": "只能归因到对外 AnalyzeTurn 整体链路，不能写成 QLoRA 分类器 F1。",
+      "risk_notes": "这是最高风险表述；任何简历版本都必须保留链路口径。",
+      "last_verified": "2026-11-06"
+    },
+    {
+      "id": "SAFE-002",
+      "source_fact": "现有简历提到 Qwen3.5-9B 安全分类后训练，但仓库评测报告没有提供可直接归属于该分类器的完整离线指标。",
+      "candidate_wording": "参与安全分类后训练与链路接入验证。",
+      "sources": [
+        "resume/V2_ASu/王晨曦_大模型应用实习_ASu_V2.html",
+        "model_eval_data/risk-judge-280-report-technical.md"
+      ],
+      "responsibility_level": "参与",
+      "verification_status": "待确认",
+      "allowed_uses": ["面试补充，确认训练证据后使用"],
+      "interview_details": "需补基座模型、数据集划分、QLoRA 配置、训练命令、模型产物、独立验证集指标和接入字段映射。",
+      "boundary": "在证据补齐前，不写成主导 QLoRA 微调，也不绑定 95.37%/96.43% 指标。",
+      "risk_notes": "若面试官深挖训练细节而无法提供，会削弱全部项目可信度。",
+      "last_verified": "2026-11-06"
+    },
+    {
+      "id": "PERF-001",
+      "source_fact": "历史 200 轮端到端报告记录 200/200 成功、空回复 0、TTFT P95 2436ms、总时延 P95 4411ms。",
+      "candidate_wording": "参与 200 轮端到端流式链路验证，请求成功率 100%、空回复 0，TTFT P95 2.436 秒、总时延 P95 4.411 秒。",
+      "sources": [
+        "model_eval_data/总链路时延报告-技术版-20260904.md"
+      ],
+      "responsibility_level": "参与",
+      "verification_status": "已确认",
+      "allowed_uses": ["简历项目 bullet", "性能面试题"],
+      "interview_details": "4 用户各 50 轮、6600ms 间隔；189 普通生成、8 guidance、2 safety fixed、1 schema_invalid。",
+      "boundary": "这是历史 qwen3.6-flash 链路快照，不能代表当前 qwen3.7-plus 现状。",
+      "risk_notes": "不要说并发压测或高 QPS；报告更接近稳定性与端到端时延验证。",
+      "last_verified": "2026-11-06"
+    },
+    {
+      "id": "ARCH-001",
+      "source_fact": "代码显示 AI 对话采用安全权威、知识门控、流式生成、候选输出、用户确认与后端校验的架构。",
+      "candidate_wording": "熟悉母婴 AI 应用中安全门控、RAG、流式生成和候选确认的端到端架构。",
+      "sources": [
+        "PRD/AI +陪伴 App 改版 母婴版本V2.0 PRD.md",
+        "repository/P01-backendServer-main/docs/iknowu/IKNOWU_PROJECT_GUIDE.md",
+        "repository/ai-server-main/src/ai-orchestrator/chat/chat.service.ts",
+        "repository/ai-server-main/src/ai-orchestrator/chat/knowledge-routing-phase.ts"
+      ],
+      "responsibility_level": "参与",
+      "verification_status": "已确认",
+      "allowed_uses": ["技能摘要", "架构面试题"],
+      "interview_details": "可以讲清系统原理与调用链，但被问到个人改动时应回到语料和评测证据。",
+      "boundary": "理解/参与项目不等于主导整个十仓架构设计。",
+      "risk_notes": "简历中避免使用‘独立设计全链路’或‘主导架构’。",
+      "last_verified": "2026-11-06"
+    },
+    {
+      "id": "DATASET-001",
+      "source_fact": "现有简历提到 4,000+ 对话样本与 280 条隐蔽风险样本；仓库中可验证 280 条风险报告，但尚未形成 4,000+ 的统一数据清单证据。",
+      "candidate_wording": "参与 4,000+ 对话样本与 280 条风险样本的评测集建设。",
+      "sources": [
+        "resume/V2_ASu/王晨曦_大模型应用实习_ASu_V2.html",
+        "model_eval_data/risk-judge-280-report-technical.md"
+      ],
+      "responsibility_level": "参与",
+      "verification_status": "待确认",
+      "allowed_uses": ["确认数据清单后用于简历"],
+      "interview_details": "需说明 4,000+ 的构成、去重、划分、标注规范、版本与个人贡献。",
+      "boundary": "当前只对 280 条风险评测有强报告证据。",
+      "risk_notes": "在补清单前，建议简历主 bullet 不写 4,000+。",
+      "last_verified": "2026-11-06"
+    }
+  ]
+}
